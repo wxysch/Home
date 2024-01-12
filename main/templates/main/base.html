@@ -175,14 +175,18 @@
                 <div class="col-lg-10">
                     <!-- Контент на странице -->
                    {% block content %}
-                     
+                   <h1 class="mt-5 pt-5"><strong>{{ content }}</strong></h1>
                    {% endblock %}
                 </div>
             </div>
         </div>
     </section>
     {% block footer %}
-      
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+        </div>
+    </footer>
     {% endblock %}
     <script src="{% static "deps/js/jquery/jquery-3.7.0.min.js" %}"></script>
     <script src="{% static "deps/js/jquery-events.js" %}"></script>
