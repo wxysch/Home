@@ -17,3 +17,6 @@ class Products(models.Model):
     discount = models.DecimalField(default=0.00, max_digits = 7, decimal_places=2)
     quantity = models.PositiveIntegerField(default=0)
     category = models.ForeignKey(Categories,on_delete = models.CASCADE)
+
+    def __str__(self):
+        return self.name
